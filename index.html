@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">WELCOME</h1>
+    <img src="logo.png" height="100px" id="logo" />
+    <p id="info">Please enter your table No:</p>
+    <div class="enter-table">
+      <input
+        type="number"
+        max="999"
+        name="input-table"
+        class="input-table"
+        id="input-table"
+      />
+      <button type="submit" id="submit">Submit</button>
+    </div>
+    <p id="info" class="info-2">Please enter your name</p>
+    <div class="enter-table table-2">
+      <input
+        type="text"
+        name="input-table"
+        id="input-name"
+        class="input-table input-name"
+      />
+    </div>
+    <div class="popup" id="check-popup">
+      <p>Check is coming!</p>
+    </div>
+    <div class="popup" id="order-popup">
+      <p>Order is coming!</p>
+    </div>
+    <div class="btn-container">
+      <a href="menu.html" id="menu" class="btn">MENU</a>
+      <a href="#" id="order" class="btn">ORDER</a>
+      <a href="#" id="check" class="btn">CHECK</a>
+      <a href="vote.html" id="vote" class="btn">VOTE</a>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyB1ihRx7_itMfXKnGuk8WTxxNwGiI5mckw",
+        authDomain: "qrserviceapp.firebaseapp.com",
+        databaseURL: "https://qrserviceapp-default-rtdb.firebaseio.com",
+        projectId: "qrserviceapp",
+        storageBucket: "qrserviceapp.appspot.com",
+        messagingSenderId: "471143779634",
+        appId: "1:471143779634:web:f4107e91ac6f76725edb2b",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
